@@ -1,34 +1,24 @@
-body
-{    
-    background-color: beige;   
-}
-
-.container {
-    width: 80%;
+body {
+    align-content: center;
+    width: 60%;
     margin: 0 auto;
-    max-width: 900px; 
     font-family: Arial; 
 } 
 
-.header
-{
-    width: 100%;   
-}
-
-.logo img
+img
 {
     width: 170px;
     height: 150px;
 }
 
-.logo
+#logo
 {
     float: left;
     position: relative;
     top: 15px;
 }
 
-.searchbox button
+#searchbox button
 {
     position: relative;
     top: 30px;
@@ -50,7 +40,7 @@ body
     border-radius: 5px;
 }
 
-.newsearch
+#newsearch
 {
     float:right;
     
@@ -68,7 +58,7 @@ body
     border-bottom-left-radius: 5px 5px;
 }
 
-.navbar a
+#navbar a
 {
     
     top: 80px;
@@ -88,7 +78,7 @@ body
     color:#cfa30c;
 }
 
-.middlesession
+#middlesession
 {
     top: 250px;
     position: relative;
@@ -97,14 +87,25 @@ body
     background-color: #cfa30c;
 }
 
-.mission
+#mission
 {
     position: absolute; 
     top: 5px;
     width: 50%;
-    
     padding-left: 20px;
     
+}
+
+#missionrank {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    padding-left: 20px;
+    background-color: #cfa30c;
+}
+
+#missionrank ul li {
+    text-decoration: none;
 }
 
 h4
@@ -124,21 +125,28 @@ p
     margin: 0 auto;
 }
 
-.homepageimg
+#homepageimg
 {
     position: absolute; 
-    top: 100px;
-    left: 500px;
+    top: 5px;
+    right: 50px;
+    
+    padding-top: 20px;
 }
 
-.homepageimg img 
+#homepageimg img 
 {
-    width: 80%;
-    float: left;
+    width: 350px;
+    height: 300px;  
     border-radius: 10px;
 }
 
-.footerbar a
+#footerbar {
+    margin: 530px auto;
+    position: absolute;
+}
+
+#footerbar a
 {
     top: 350px;
     left: 50px;
@@ -157,54 +165,4 @@ p
     color:#cfa30c;
 }
 
-/* Responsive Part */
-
-@media (max-width: 900px) 
-{
-    .logo, .searchbox
-  {
-    float:none;
-    width: 95%;
-  }
-    .logo img, .searchbox button
-  {
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 750px) 
-{
-    .mission, .homepageimg img
-  {
-    display: block;
-    margin: 0 auto;
-  }
-    .container
-  {
-    width: 100%;    
-  }
-
-  .middlesession
-  {
-      float: none;   
-      /* problem resizing image */
-  }
-}
-
-@media (max-width: 550px)
-{
-  .navbar a, .footerbar a
-  {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 450px)
-{
-  .navbar a, .footerbar a
-  {
-     font-size: 1.15em;
-      display:inline-block;
-  }
-}
+/* Jason's Edits */
