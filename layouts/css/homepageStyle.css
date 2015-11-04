@@ -1,0 +1,251 @@
+body
+{    
+    background-color: beige;   
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 900px; 
+    font-family: Arial; 
+} 
+
+.header
+{
+    width: 100%;   
+}
+
+.logo img
+{
+    width: 170px;
+    height: 150px;
+    
+    border-radius: 50%;
+}
+
+.logo
+{
+    float: left;
+    position: relative;
+    top: 15px;
+}
+
+.searchbox button
+{
+    position: relative;
+    top: 30px;
+    
+    float: right;
+    
+    width:70px;
+    height: 25px;
+    
+    background-color: #3359a0;
+    color: white;
+    
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+	text-decoration: none;
+    
+    border-radius: 5px;
+}
+
+.newsearch
+{
+    float:right;
+    
+    position: relative;
+    top: 30px;
+    left: 25px;
+    
+    width: 200px;
+    height: 25px;
+        
+    margin: 0;
+    padding: 5px 15px;
+    border-right:0px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+
+.navbar a
+{
+    
+    top: 80px;
+    left: 50px;
+    position: relative;
+    
+    padding: 10px 40px 10px 40px;
+    border: 1px solid #cfa30c;
+    float: left;    
+    clear: right;
+    
+    text-align: center;   
+    text-decoration: none;
+    font-weight: bold;
+    
+    background-color: #3f0f7c;
+    color:#cfa30c;
+}
+
+.middlesession
+{
+    top: 250px;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: #cfa30c;
+}
+
+.mission
+{
+    position: absolute; 
+    top: 5px;
+    width: 50%;
+    
+    padding-left: 20px;
+    
+}
+
+h4
+{
+    font-weight:normal;
+    font-size: 28px;
+    color: #3359a0;
+}
+
+p
+{
+    font-family: Georgia; 
+    float: left;
+    
+    text-indent: 35px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.homepageimg
+{
+    position: absolute; 
+    top: 100px;
+    left: 500px;
+}
+
+.homepageimg img 
+{
+    width: 90%;
+    float: left;
+    border-radius: 10px;
+}
+
+.footer
+{
+    top: 300px;
+    width: 100%;
+    
+    position: relative;
+    left: 10px;
+}
+
+.footerbar ul {
+    text-align: center;
+    padding: 0;    
+    position: absolute;
+}
+
+.footerbar ul li {
+    list-style-type: none;
+    display: inline;
+    float: left;
+    
+    padding: 10px 52px 10px 52px;
+    font-size: 1.20em;
+    
+    background-color: #3f0f7c;
+}
+
+.footerbar li a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 3px;
+}
+
+.footerbar li a:hover {
+    border-bottom: 2px solid #cfa30c;
+}
+
+/* Responsive Part */
+
+@media (max-width: 970px) 
+{
+    .middlesession
+    {     
+      height: 450px;   
+    }
+}
+
+@media (max-width: 900px) 
+{
+    .logo, .searchbox
+  {
+    float:none;
+    width: 95%;
+  }
+    .logo img, .searchbox button
+  {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 750px) 
+{
+    .mission, .homepageimg img
+  {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+    .container
+  {
+    width: 100%;    
+  }
+
+  .middlesession
+  {
+      float: none;
+  }
+}
+
+@media (max-width: 600px)
+{
+  .navbar a
+  {
+    padding: 10px;
+  }
+    .footerbar ul li 
+    {
+        padding: 10px 20px 10px 20px;
+        font-size: 1.0em;
+        display:inline-block;
+    }
+    .mission p
+    {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px)
+{
+  .navbar a
+  {
+     font-size: 1.15em;
+      display:inline-block;
+  }
+    .middlesession
+    {
+        height: 500px;   
+    }
+}
