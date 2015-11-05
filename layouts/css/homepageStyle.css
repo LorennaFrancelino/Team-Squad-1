@@ -233,6 +233,14 @@ h4 {
     }
 }
 
+@media (max-width: 370px)
+{
+    .middlesession
+    {
+        height: 590px;   
+    }
+}
+
 /* Contact page */
 
 .left {
