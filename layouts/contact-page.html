@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Contact Page</title>
-        <link rel="stylesheet" type="text/css" href="homepageStyle1.css">
+        <link rel="stylesheet" type="text/css" href="css/homepageStyle.css">
     </head>
     <body>
 	<div class="container">
@@ -31,27 +31,27 @@
                 <form>
                 <div class="form-group">
                     <label for="contact-name">Name</label>
-                    <input type="text" class="form-control" id="contact-name" name="name" placeholder="Enter your name.." onkeyup='validateName()'>
+                    <input type="text" class="form-control" id="contact-name" name="name" placeholder="Enter your name..">
                     <span class='error-message' id='name-error'></span>
                 </div>
             <div class="form-group">
                 <label for="contact-name">Subject</label>
             <select name="subject">
-                <option value="val1">Bank</option>
-                <option value="val2">Info</option>
-                <option value="val3">About</option>
+                    <option value="val1">Bank</option>
+                    <option value="val2">Info</option>
+                    <option value="val3">About</option>
                 <option value="val4">Stuff</option>
             </select>
             </div>
                 <div class="form-group">
                     <label for="contact-email">Email</label>
-                    <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+                    <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email">
                     <span class='error-message' id='email-error'></span>
                 </div>   
 
                 <div class="form-group">
-                    <label for='contactMessage'>Message</label><br>
-                    <textarea class="form-control" rows="5" id='contact-message'  name='message' placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+                    <label for="contact-message">Message</label><br>
+                    <textarea class="form-control" rows="5" id='contact-message'  name='message' placeholder="Enter a brief message"></textarea>
                     <span class='error-message' id='message-error'></span>
                 </div>
                 <button onclick='return validateForm()' class="submit">Submit</button>
@@ -59,12 +59,14 @@
 			</form>
 			</div>
 		</div>
-        <div>
+         <div class="footer">
             <div class="footerbar">
-                <a href="#">Terms &amp; Conditions</a>
-                <a href="#">Our Social Media</a>
-                <a href="#">F.A.Q</a>
-                <a href="#">Contact Us</a>    
+                <ul>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Our Social Media</a></li>
+                <li><a href="#">F.A.Q</a></li>
+                <li><a href="#">Contact Us</a></li>
+                </ul>
             </div>
         </div>
 	</div>
