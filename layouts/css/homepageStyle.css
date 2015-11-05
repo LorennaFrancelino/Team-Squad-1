@@ -233,11 +233,19 @@ h4 {
     }
 }
 
-@media (max-width: 370px)
+@media (max-width: 400px)
 {
     .middlesession
     {
         height: 590px;   
+    }
+}
+
+@media (max-width: 340px)
+{
+    .middlesession
+    {
+        height: 690px;   
     }
 }
 
