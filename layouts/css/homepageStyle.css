@@ -128,7 +128,7 @@ h4 {
     list-style-type: none;
     display: inline;
     float: left;
-    padding: 10px 52px 10px 52px;
+    padding: 10px 38px 10px 38px;
     font-size: 1.20em;
     background-color: #3f0f7c;
 }
@@ -341,7 +341,7 @@ textarea {
     top: 600px;
     width: 100%;
     position: relative;
-    left: 10px;
+    left: 5px;
 }
 
 .footerbar1 ul {
@@ -354,7 +354,7 @@ textarea {
     list-style-type: none;
     display: inline;
     float: left;
-    padding: 10px 52px 10px 52px;
+    padding: 10px 38px 10px 38px;
     font-size: 1.20em;
     background-color: #3f0f7c;
 }
@@ -475,4 +475,71 @@ p {
     {
         top: 1100px;   
     }
+}
+
+/* Categories' Page */
+
+.middlesessionC {
+    top: 250px;
+    position: relative;
+    width: 100%;
+    height: 1080px;    
+    
+    padding-left: 20px;    
+    background-color: #cfa30c;
+}
+
+.category {
+    position: absolute; 
+    top: 5px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.category p
+{
+    font-family: Georgia;   
+    font-size: 1.2em;
+    
+    line-height: 1.5;
+    
+    width: 100%;
+}
+
+.category p:hover
+{
+    color: white;   
+    
+}
+
+.footerBox2 {
+    top: 250px;
+    width: 100%;
+    position: relative;
+    left: 13px;
+}
+
+.footerbar2 ul {
+    text-align: center;
+    padding: 0;    
+    position: absolute;
+}
+
+.footerbar2 ul li {
+    list-style-type: none;
+    display: inline;
+    float: left;
+    padding: 10px 38px 10px 38px;
+    font-size: 1.21em;
+    background-color: #3f0f7c;
+}
+
+.footerbar2 li a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 3px;
+}
+
+.footerbar2 li a:hover {
+    border-bottom: 2px solid #cfa30c;
 }
