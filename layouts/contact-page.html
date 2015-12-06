@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Page</title>
+        <link rel="stylesheet" type="text/css" href="css/homepageStyle.css">
+    </head>
+    <body>
+	<div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="http://i.imgur.com/VzHosQ5.jpg" alt="logo"/>
+            </div>
+            <div class="searchbox">
+                <button type="button">Search</button>
+                <form class="newsearch" method="get" action="http://www.google.com">
+                    <input type="text" name="q" size="21" maxlength="120">
+                </form>
+            </div>
+            <div class="navbar">
+                <a href="http://www.albany.edu/~ld551222/362/TeamProject/front-page.html">Home</a>
+                <a href="http://www.albany.edu/~ld551222/362/TeamProject/bankrank.html">Bank Ranking</a>
+                <a href="#">Bank Calculator</a>
+                <a href="http://www.albany.edu/~ld551222/362/TeamProject/categories.html">Categories</a>    
+            </div>
+        </div>
+        <div class="middlesession">
+			<div class="left">
+			<img src="http://i.imgur.com/LB3d2Z1.jpg" alt="file"/>
+			</div>
+            <div class="right">
+                <form>
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" class="form-control" id="contact-name" name="name" placeholder="Enter your name..">
+                    <span class='error-message' id='name-error'></span>
+                </div>
+            <div class="form-group">
+                <label for="contact-name">Subject</label>
+            <select name="subject">
+                    <option value="val1">Bank</option>
+                    <option value="val2">Info</option>
+                    <option value="val3">About</option>
+                <option value="val4">Stuff</option>
+            </select>
+            </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email">
+                    <span class='error-message' id='email-error'></span>
+                </div>   
+
+                <div class="form-group">
+                    <label for="contact-message">Message</label><br>
+                    <textarea class="form-control" rows="5" id='contact-message'  name='message' placeholder="Enter a brief message"></textarea>
+                    <span class='error-message' id='message-error'></span>
+                </div>
+                <button onclick='return validateForm()' class="submit">Submit</button>
+                <span class='error-message' id='submit-error'></span>
+			</form>
+			</div>
+		</div>
+         <div class="footer">
+            <div class="footerbar">
+                <ul>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Our Social Media</a></li>
+                <li><a href="#">F.A.Q</a></li>
+                        <li><a href="#">About</a></li>
+                <li><a href="http://www.albany.edu/~ld551222/362/TeamProject/contact-page.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+	</div>
+    </body>
+
+</html>
