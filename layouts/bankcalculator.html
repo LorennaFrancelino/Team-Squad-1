@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <title>Bank Calculator</title>
+    <link rel="stylesheet" type="text/css" href="homepageStyle.css">   
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="http://i.imgur.com/VzHosQ5.jpg" alt="logo" />
+            </div>
+            <div class="searchbox">
+                <button type="button">Search</button>
+                <form class="newsearch" method="get" action="http://www.google.com">
+                    <input type="text" name="q" size="21" maxlength="120">
+                </form>
+            </div>
+            <div class="navbar">
+                <a href="http://www.albany.edu/~ld551222/362/TeamProject/front-page.html">Home</a>
+                <a href="http://www.albany.edu/~ld551222/362/TeamProject/bankrank.html">Bank Ranking</a>
+                <a href="http://www.albany.edu/~ld551222/362/TeamProject/bankcalculator.html">Bank Calculator</a>
+                <a href="http://www.albany.edu/~ld551222/362/TeamProject/categories.html">Categories</a>
+            </div>
+        </div>
+        <div class="middlesessionCalc">
+            <h2>Bank Calculator</h2>
+            <div ng-app="myApp" ng-controller="myController">
+                <div class="calculator_pt1">
+                    <form>
+                        <ul>
+                            <li>
+                                <label>	Number of Branch locations </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.numBranchLocations">
+                            </li>
+                            <li>
+                                <label>Branch locations: distribution </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.branchLocalDistributions">
+                            </li>
+                            <li>
+                                <label>	Online Banking </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.onlineBanking">
+                            </li>
+                            <li>
+                                <label>Fee for Outside ATM's </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.outsideATMFee">
+                            </li>
+                            <li>
+                                <label>	Checking Account Fees </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.checkingAccountFees">
+                            </li>
+                            <li>
+                                <label>Savings Account Fees </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.savingAccountFees">
+                            </li>
+                            <li>
+                                <label>Overdraft practices </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.overdraftPractices">
+                            </li>
+                            <li>
+                                <label>Overdraft Thresholds and Limits </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.overdraftThresholdLimits">
+                            </li>
+                            <li>
+                                <label>Credit cards </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.creditCards">
+                            </li>
+                            <li>
+                                <label>Credit Card Fees </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.creditCardsFees">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="calculator_pt2">
+                    <form>
+                        <ul>
+                            <li>
+                                <label>	Loan Origination marketshare </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.loanOrigMarketshare">
+                            </li>
+                            <li>
+                                <label>Loan acceptance rate in NY State </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.loanAccNYstate">
+                            </li>
+                            <li>
+                                <label>	Loan acceptance rate Latino borrowers </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.loanAccLatino">
+                            </li>
+                            <li>
+                                <label>Loan acceptance rate Black borrowers </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.loanAccBlack">
+                            </li>
+                            <li>
+                                <label>	Loan acceptance rate low-moderate income borrowers </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.loanAccLowMod">
+                            </li>
+                            <li>
+                                <label>	Percentage of total to Low- and Moderate-Income borrowers </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.percentageLowAndMod">
+                            </li>
+                            <li>
+                                <label>	Loan acceptance rate low-moderate-income communities </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.loanAccLowModCom">
+                            </li>
+                            <li>
+                                <label>Percentage of total in communities of color </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.percentageComOfColor">
+                            </li>
+                            <li>
+                                <label>	Acceptance of alternate forms of identification </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.accOfAltID">
+                            </li>
+                            <li>
+                                <label>Cost of wire transfers </label>
+                                <input type="text" ng-blur="reset()" ng-model="weights.costWireTranfers">
+                            </li>
+                            <li>
+                                <label>Total Percent: {{ calculateTotal() }}
+                                <br>Percent Remaining: {{ 100 - calculateTotal()}}</label>
+                            </li>
+                        </ul>
+                        <button type="button" ng-show="calculateTotal() === 100" ng-click="finalScore()">Calculate Bank Scores</button>
+                    </form>
+                    <div ng-repeat="(key, value) in allScores">
+                        <p>{{key}}: {{value}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBoxCalc">
+            <a href="http://www.albany.edu/~ld551222/362/TeamProject/contact-page.html">Contact Us</a>
+        </div>    
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script> 
+    <script type="text/javascript" src="calculator.js"></script> 
+</body>
+</html>
