@@ -70,6 +70,11 @@ body {
   color: #cfa30c;
 }
 
+.navbar a:hover
+{
+    background-color: #693CA2;
+}
+
 .middlesession {
   top: 250px;
   position: relative;
@@ -530,4 +535,41 @@ p {
 .accordion-section-content {
   padding: 15px;
   display: none;
+}
+
+/* ---- Responsive ----- */
+@media (max-width: 985px) {
+    .footerBox2 {
+    top: 350px;
+  }
+    .middlesessionC{
+        height: 1200px;
+    }
+}
+
+@media (max-width: 770px) {
+  .footerBox2 {
+    top: 400px;
+  }
+    .middlesessionC{
+        height: 1300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .middlesessionC{
+        height: 1480px;
+    }
+}
+
+@media (max-width: 420px) {
+  .middlesessionC{
+        height: 1600px;
+    }
+}
+
+@media (max-width: 350px) {
+     .middlesessionC{
+        height: 1750px;
+    }
 }
