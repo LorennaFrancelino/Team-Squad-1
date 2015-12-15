@@ -34,7 +34,7 @@ body {
   background-color: #233e6f;
   color: white;
   margin: 0;
-  outline: none;  
+  outline: none;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -59,7 +59,7 @@ body {
   top: 80px;
   left: 50px;
   position: relative;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 37px 10px 37px;
   border: 1px solid #FFDB5E;
   float: left;
   clear: right;
@@ -70,9 +70,8 @@ body {
   color: #FFDB5E;
 }
 
-.navbar a:hover
-{
-    background-color: #693CA2;
+.navbar a:hover {
+  background-color: #693CA2;
 }
 
 .middlesession {
@@ -91,8 +90,7 @@ body {
 }
 
 .mission p {
-    
-    padding: 0;
+  padding: 0;
   font-family: Georgia;
   float: left;
   text-indent: 35px;
@@ -112,21 +110,19 @@ body {
   border-radius: 10px;
 }
 
-.footerBoxHome
-{
-    top: 650px;
-    left: 270px;
-    width: 100%;
-    max-width: 62.5%;
-    height: 40px;
-    position: absolute;   
-      
-    font-size: 26px;
-    text-align: center;
-    
-    background-color: #3f0f7c;     
-    padding-top: 10px;
+.footerBoxHome {
+  top: 650px;
+  width: 100%;
+  max-width: 62.5%;
+  height: 40px;
+  position: absolute;
+  font-size: 26px;
+  text-align: center;
+  background-color: #3f0f7c;
+  padding-top: 10px;
 }
+
+
 /* Responsive Part */
 
 @media (max-width: 970px) {
@@ -136,7 +132,8 @@ body {
 }
 
 @media (max-width: 900px) {
-  .logo, .searchbox {
+  .logo,
+  .searchbox {
     float: none;
     width: 95%;
   }
@@ -194,6 +191,8 @@ body {
     height: 690px;
   }
 }
+
+
 /* Contact page */
 
 .left {
@@ -247,6 +246,8 @@ textarea {
   position: relative;
   margin-top: 10px;
 }
+
+
 /* Contact Responsive */
 
 @media (max-width: 600px) {
@@ -267,6 +268,8 @@ textarea {
     display: inline-block;
   }
 }
+
+
 /* Bank Rank */
 
 .missionrank {
@@ -277,20 +280,15 @@ textarea {
   background-color: #FFDB5E;
 }
 
-.footerBoxRank
-{
-    top: 980px;
-    left: 265px;
-    width: 100%;
-    max-width: 63.2%;
-    height: 40px;
-    position: absolute;   
-      
-    font-size: 26px;
-    text-align: center;
-    
-    background-color: #3f0f7c;     
-    padding-top: 10px; 
+.footerBoxRank {
+  top: 2430px;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  font-size: 26px;
+  text-align: center;
+  background-color: #3f0f7c;
+  padding-top: 10px;
 }
 
 h3 {
@@ -306,6 +304,12 @@ h3 {
 .bank {
   width: 50%;
   float: left;
+  height: 230px;
+}
+
+.bank h4 {
+  font-size: 28px;
+  text-align: center;
 }
 
 p {
@@ -314,11 +318,8 @@ p {
   text-indent: 20px;
   font-size: 16px;
   margin: 0 auto;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 10px;
 }
+
 
 /* Categories' Page */
 
@@ -345,21 +346,18 @@ p {
   width: 100%;
 }
 
-.footerBoxCateg
-{
-    top: 1350px;
-    left: 265px;
-    width: 100%;
-    max-width: 64.5%;
-    height: 40px;
-    position: absolute;   
-      
-    font-size: 26px;
-    text-align: center;
-    
-    background-color: #3f0f7c;     
-    padding-top: 10px;
+.footerBoxCateg {
+  top: 1350px;
+  width: 100%;
+  max-width: 64.7%;
+  height: 40px;
+  position: absolute;
+  font-size: 26px;
+  text-align: center;
+  background-color: #3f0f7c;
+  padding-top: 10px;
 }
+
 
 /*----- Accordion -----*/
 
@@ -380,6 +378,8 @@ p {
 .accordion a {
   text-decoration: none;
 }
+
+
 /*----- Section Titles -----*/
 
 .accordion-section-title {
@@ -390,7 +390,6 @@ p {
   padding: 10px;
   transition: all linear 0.15s;
   /* Type */
-  
   font-size: 1.200em;
   color: black;
 }
@@ -403,6 +402,8 @@ p {
 .accordion-section:last-child .accordion-section-title {
   border-bottom: none;
 }
+
+
 /*----- Section Content -----*/
 
 .accordion-section-content {
@@ -410,164 +411,195 @@ p {
   display: none;
 }
 
+
 /* ---- Responsive ----- */
+
 @media (max-width: 985px) {
-    .footerBox2 {
-    top: 350px;
+  .middlesessionC {
+    height: 1200px;
   }
-    .middlesessionC{
-        height: 1200px;
-    }
 }
 
 @media (max-width: 770px) {
-  .footerBox2 {
-    top: 400px;
+  .middlesessionC {
+    height: 1300px;
   }
-    .middlesessionC{
-        height: 1300px;
-    }
 }
 
 @media (max-width: 480px) {
-    .middlesessionC{
-        height: 1480px;
-    }
+  .middlesessionC {
+    height: 1480px;
+  }
 }
 
 @media (max-width: 420px) {
-  .middlesessionC{
-        height: 1600px;
-    }
+  .middlesessionC {
+    height: 1600px;
+  }
 }
 
 @media (max-width: 350px) {
-     .middlesessionC{
-        height: 1750px;
-    }
+  .middlesessionC {
+    height: 1750px;
+  }
 }
+
 
 /* ----- Calculator Page ----- */
-.middlesessionCalc
-{
-    top: 100px;
-    position: relative;
-    width: 100%;
-    height: 730px;
-    background-color: #FFDB5E;
-    
-    padding-top: 30px;
-        
-    clear: both;
+
+#middlesessionCalc {
+  top: 100px;
+  position: relative;
+  width: 100%;
+  height: 730px;
+  background-color: #FFDB5E;
+  padding-top: 30px;
+  clear: both;
 }
 
-.middlesessionCalc h2,
+#middlesessionCalc h2,
 .category h4,
 .missionrank h2,
-.mission h4
-{
-    font-weight: bold;
-    font-size: 32px;
-    color: #233e6f;       
+.mission h4 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #233e6f;
 }
 
 .missionrank h2,
-.middlesessionCalc h2
-{
-    text-align: center;
+#middlesessionCalc h2 {
+  text-align: center;
 }
 
-.calculator_pt1 ul li, .calculator_pt2 ul li
-{
-    list-style-type: none;
+.calculator_pt1 ul li,
+.calculator_pt2 ul li {
+  list-style-type: none;
 }
 
-.calculator_pt1
-{
-    top: 5px;
-    width: 40%;
-    
-    float: left;    
+.calculator_pt1 {
+  top: 5px;
+  width: 40%;
+  float: left;
 }
 
-.calculator_pt1 li, .calculator_pt2 li
-{
-    padding-top: 25px;
+.calculator_pt1 li,
+.calculator_pt2 li {
+  padding-top: 25px;
 }
 
 .calculator_pt1 input {
-    width:40px;
-    margin-left:10px;
+  width: 40px;
+  margin-left: 10px;
 }
 
 .calculator_pt1 label {
-    display:inline-block;
-    width: 250px;
+  display: inline-block;
+  width: 250px;
 }
 
-.calculator_pt2
-{
-    top: 5px;
-    width: 60%;
-    float: left;
+.calculator_pt2 {
+  top: 5px;
+  width: 60%;
+  float: left;
 }
 
 .calculator_pt2 input {
-    width:40px;
-    margin-left:10px;
+  width: 40px;
+  margin-left: 10px;
 }
 
 .calculator_pt2 label {
-    display:inline-block;
-    width: 400px;
+  display: inline-block;
+  width: 400px;
 }
 
-.calculator_pt2 button
-{
-    font-weight: bold;
-    margin-right: 45px;
-    outline: none;  
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none; 
-    
-    padding: 5px;
-    background-color: #233e6f;
-    color: white;
-    
-    float: right;
+.calculator_pt2 button {
+  font-weight: bold;
+  margin-right: 45px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #233e6f;
+  color: white;
+  float: right;
 }
 
-.footerBoxCalc {
-    top: 1050px;
-    left: 265px;
-    width: 100%;
-    max-width: 63%;
-    height: 40px;
-    position: absolute;   
-      
-    font-size: 26px;
-    text-align: center;
-    
-    background-color: #3f0f7c;     
-    padding-top: 10px;
+#footerBoxCalc {
+  top: 1050px;
+  width: 100%;
+  max-width: 63.5%;
+  height: 40px;
+  position: absolute;
+  font-size: 26px;
+  text-align: center;
+  background-color: #3f0f7c;
+  padding-top: 10px;
 }
 
-.footerBoxCalc a,
+#footerBoxCalc a,
 .footerBoxCateg a,
 .footerBoxRank a,
-.footerBoxHome a {    
-    text-decoration: none;
-    color: white;   
-    
-    padding-right: 20px;
+.footerBoxHome a {
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
 }
 
-.footerBoxCalc a:hover,
+#footerBoxCalc a:hover,
 .footerBoxCateg a:hover,
 .footerBoxRank a:hover,
-.footerBoxHome a:hover
-{
-    color: #FFDB5E;
-    font-size: 28px;
+.footerBoxHome a:hover {
+  color: #FFDB5E;
+  font-size: 28px;
+}
+
+
+/* Score's Page */
+
+h3 {
+  color: #233e6f;
+  font-size: 28px;
+}
+
+#finalScores {
+  position: absolute;
+  left: 255px;
+  display: none;
+  margin: 0 auto;
+}
+
+#resetButton {
+  position: absolute;
+  left: 980px;
+  bottom: 430px;
+  display: none;
+}
+
+#resetButton button {
+  background-color: #233e6f;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+td {
+  text-align: center;
 }
