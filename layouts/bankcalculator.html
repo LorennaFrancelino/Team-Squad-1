@@ -20,16 +20,16 @@
             </div>
             <div class="navbar">
                 <a href="http://www.albany.edu/~ld551222/362/TeamProject/front-page.html">Home</a>
-                <a href="http://www.albany.edu/~ld551222/362/TeamProject/bankrank.html">Bank Ranking</a>
+                <a href="http://www.albany.edu/~ld551222/362/TeamProject/bankrank.html">Bank Information</a>
                 <a href="http://www.albany.edu/~ld551222/362/TeamProject/bankcalculator.html">Bank Calculator</a>
                 <a href="http://www.albany.edu/~ld551222/362/TeamProject/categories.html">Categories</a>
             </div>
         </div>
-        <div class="middlesessionCalc">
+        <div id="middlesessionCalc">
             <h2>Bank Calculator</h2>
             <div ng-app="myApp" ng-controller="myController">
                 <div class="calculator_pt1">
-                    <form>
+                    <form id="displayForm1">
                         <ul>
                             <li>
                                 <label>	Number of Branch locations </label>
@@ -75,7 +75,7 @@
                     </form>
                 </div>
                 <div class="calculator_pt2">
-                    <form>
+                    <form id="displayForm2">
                         <ul>
                             <li>
                                 <label>	Loan Origination marketshare </label>
@@ -122,16 +122,19 @@
                                 <br>Percent Remaining: {{ 100 - calculateTotal()}}</label>
                             </li>
                         </ul>
-                        <button type="button" ng-show="calculateTotal() === 100" onclick="openWindow()">Calculate Bank Scores</button>
+                        <button type="button" ng-show="calculateTotal() === 100" onclick="displayTable(1)" ng-click="finalScore()">Calculate Bank Scores</button>
                     </form>
-                   <!-- <table class="finalScores">
+                   <table id="finalScores">
                         <tr><th>Bank Name</th><th>Overall Score</th></tr>
                         <tr ng-repeat="overall in allScores | orderBy: '-finalScore'"><td>{{overall.name}}</td><td>{{overall.finalScore}}</td></tr>
-                    </table> -->
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="footerBoxCalc">
+        <div id="resetButton">
+            <button type="button" onclick="displayTable(2)">Back To Calculator</button>
+        </div>
+        <div id="footerBoxCalc">
             <a href="http://www.albany.edu/~ld551222/362/TeamProject/contact-page.html">Contact Us</a>
         </div>    
     </div>
