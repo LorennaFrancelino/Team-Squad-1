@@ -61,7 +61,7 @@
                             </li>
                             <li>
                                 <label>Overdraft Thresholds and Limits </label>
-                                <input type="text" ng-blur="reset()" ng-model="weights.overdraftThresholdLimits">
+                                <input type="text" ng-blur="reset()" ng-model="weights.overdraftThresholdsLimits">
                             </li>
                             <li>
                                 <label>Credit cards </label>
@@ -122,11 +122,12 @@
                                 <br>Percent Remaining: {{ 100 - calculateTotal()}}</label>
                             </li>
                         </ul>
-                        <button type="button" ng-show="calculateTotal() === 100" ng-click="finalScore()">Calculate Bank Scores</button>
+                        <button type="button" ng-show="calculateTotal() === 100" onclick="openWindow()">Calculate Bank Scores</button>
                     </form>
-                    <div ng-repeat="(key, value) in allScores">
-                        <p>{{key}}: {{value}}</p>
-                    </div>
+                   <!-- <table class="finalScores">
+                        <tr><th>Bank Name</th><th>Overall Score</th></tr>
+                        <tr ng-repeat="overall in allScores | orderBy: '-finalScore'"><td>{{overall.name}}</td><td>{{overall.finalScore}}</td></tr>
+                    </table> -->
                 </div>
             </div>
         </div>
