@@ -536,7 +536,7 @@ myApp.controller('myController', function($scope) {
     }
   };
 
-  $scope.finalScore = function() {
+  $scope.finalScore = function() {      
     $scope.bankOfAmerica = [];
     $scope.HSBC = [];
     $scope.santander = [];
@@ -598,8 +598,27 @@ myApp.controller('myController', function($scope) {
     };
 });
 
-function openWindow()
+function displayTable(i)
 {
-    window.open('http://www.albany.edu/~ld551222/362/TeamProject/bankscore.html','action','height=550,width=600,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
-    return false;
-};
+    if(i === 1)
+    {
+        document.getElementById("finalScores").style.display = "block";
+        document.getElementById("resetButton").style.display = "block";
+        document.getElementById("displayForm1").style.display = "none";
+        document.getElementById("displayForm2").style.display = "none";
+    
+        document.getElementById("middlesessionCalc").style.height = "970px";
+        document.getElementById("footerBoxCalc").style.top = "1270px";
+    }
+    else if (i === 2)
+    {
+        document.getElementById("finalScores").style.display = "none";
+        document.getElementById("resetButton").style.display = "none";
+        document.getElementById("displayForm1").style.display = "block";
+        document.getElementById("displayForm2").style.display = "block";
+    
+        document.getElementById("middlesessionCalc").style.height = "730px";
+        document.getElementById("footerBoxCalc").style.top = "1050px";
+    }
+    
+}
